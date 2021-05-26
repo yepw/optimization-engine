@@ -77,7 +77,9 @@ rustdoc-args = [ "--html-in-header", "katex-header.html" ]
 # D.E.P.E.N.D.E.N.C.I.E.S
 # --------------------------------------------------------------------------
 [dependencies]
+wasm-bindgen = "0.2.74"
 num = "0.2.0"
+instant = { version = "0.1", features = [ "wasm-bindgen", "inaccurate" ] }
 
 # Our own stuff - L-BFGS: limited-memory BFGS directions
 lbfgs = "0.2"
